@@ -1,37 +1,114 @@
-# engenhar-ia
+# 🚀 Engenhar.IA – Orçamentação inteligente com IA especializada para engenharia e arquitetura
 
-> Repositório oficial do projeto **Engenhar.IA** – Soluções de Inteligência Artificial aplicadas à automação de tarefas e agentes autônomos.
+
+## 🎥 Demonstração em vídeo
+
+> 📽️ Assista à apresentação rápida do projeto [clicando aqui](https://yourvideolink.com)  
+
+https://expertspro.com.br/engenheiro/
+https://expertspro.com.br/engenharia/
+---
+
+## 🧠 Visão geral
+
+A **Engenhar.IA** é uma IA vertical especialista desenvolvida para automatizar o processo de orçamentação técnica de projetos de engenharia e arquitetura.
+
+Ela interpreta o briefing do cliente, gera escopos técnicos completos, precifica de forma automatizada com base em tabelas e parâmetros, e conecta com profissionais para execução, validação ou leilão técnico.
 
 ---
 
-## 💡 Visão Geral
+## 🛠️ Tecnologias e Ferramentas
 
-**Engenhar.IA** é um laboratório de prototipagem de soluções com LLMs, agentes autônomos e APIs modernas, com foco em aplicações práticas de IA para negócios. Este repositório concentra os projetos MVP em desenvolvimento, com stack baseada em Python, LangChain, FastAPI, OpenAI e interfaces em React/Tailwind.
-
----
-
-## 🧠 Tecnologias Utilizadas
-
-- **Python 3.11+**
-- **OpenAI API / Claude / Gemini**
-- **LangChain** – para construção de agentes e pipelines de RAG
-- **FastAPI** – backend leve para expor endpoints de IA
-- **React + TailwindCSS** – interfaces web dos protótipos
-- **Pinecone / Chroma** – vetorização e busca semântica
-- **Streamlit / Gradio** – protótipos rápidos de IA
+- **Python 3.11**
+- **LangChain**
+- **CrewAI**
+- **OpenAI GPT-4 / GPT-3.5-turbo**
+- **FastAPI**
+- **React + TailwindCSS (Frontend)**
+- **SQLite (MVP)** / PostgreSQL (previsto)
+- **Docker (local run)**
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🧱 Arquitetura MVP
+
+- A IA entende o briefing do cliente (em linguagem natural)
+- Valida parâmetros técnicos e identifica inconsistências
+- Sugere um escopo técnico padrão e automatiza o orçamento
+- Pode disparar processos de leilão técnico entre profissionais
+
+---
+
+## 💡 Funcionalidades em desenvolvimento
+
+- [x] Front-end com formulários técnicos guiados
+- [x] MVP funcional de orçamento automático com IA
+- [x] Back-end com FastAPI e integração GPT
+- [ ] Agente autônomo para geração de escopo técnico detalhado
+- [ ] Conexão com base de profissionais por especialidade
+- [ ] Dashboard de propostas e histórico de cotações
+- [ ] Mecanismo de validação técnica assistida por IA
+
+---
+
+## 📂 Estrutura do Repositório
+
+
+- A IA entende o briefing do cliente (em linguagem natural)
+- Valida parâmetros técnicos e identifica inconsistências
+- Sugere um escopo técnico padrão e automatiza o orçamento
+- Pode disparar processos de leilão técnico entre profissionais
+
+---
+
+## 💡 Funcionalidades em desenvolvimento
+
+- [x] Front-end com formulários técnicos guiados
+- [x] MVP funcional de orçamento automático com IA
+- [x] Back-end com FastAPI e integração GPT
+- [ ] Agente autônomo para geração de escopo técnico detalhado
+- [ ] Conexão com base de profissionais por especialidade
+- [ ] Dashboard de propostas e histórico de cotações
+- [ ] Mecanismo de validação técnica assistida por IA
+
+---
+
+## 📂 Estrutura do Repositório
+
+
+---
+
+## 👤 Autor
+
+**Ricardo Mauricio**  
+Criador técnico e fundador da Engenhar.IA  
+Especialista em IA aplicada, LLMs e automação de processos técnicos.
+
+🔗 [LinkedIn](https://linkedin.com/in/seu-perfil)  
+🔗 [GitHub](https://github.com/seuusuario)  
+📧 contato@engenhar.ia.br
+
+---
+
+## 🤝 Quer colaborar?
+
+Sugestões, issues e pull requests são bem-vindos!  
+Sinta-se livre para testar, clonar ou adaptar o projeto para seu nicho.
+
+---
+
+## 🧪 Rodando localmente
 
 ```bash
-engenhar-ia/
-│
-├── agents/              # Protótipos de agentes autônomos
-├── llm-apps/            # Aplicações verticais com LLM (ex: construção, jurídico)
-├── frontend/            # Interfaces em React + Tailwind
-├── api/                 # FastAPI backend para integração com os agentes
-├── docs/                # Documentação, prompts e fluxogramas
-├── notebooks/           # Explorações em Jupyter/Colab
-├── tests/               # Scripts de teste e validação
-└── README.md            # Esta documentação
+# Backend
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+# Frontend
+cd frontend
+npm install
+npm run dev
+
