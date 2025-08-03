@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engenhar.IA – Rede de Engenheiros com IA</title>
+  <!-- Use o CSS gerado pelo build React para manter a identidade visual -->
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/index.css" />
+</head>
+<body class="text-gray-900 bg-white">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50 border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+      <div class="flex items-center space-x-3">
+        <!-- Use o mesmo logotipo da página de clientes para manter consistência -->
+        <img src="assets/engenharIA_espiral.png" alt="Engenhar.IA" class="w-10 h-10 rounded-lg" />
+        <span class="text-2xl font-bold text-gray-900">Engenhar.IA</span>
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Parceiros</span>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#oportunidade" class="text-gray-600 hover:text-blue-600 transition-colors">Oportunidade</a>
+        <a href="#como-funciona" class="text-gray-600 hover:text-blue-600 transition-colors">Como Funciona</a>
+        <a href="#beneficios" class="text-gray-600 hover:text-blue-600 transition-colors">Benefícios</a>
+        <a href="#depoimentos" class="text-gray-600 hover:text-blue-600 transition-colors">Depoimentos</a>
+        <a href="#requisitos" class="text-gray-600 hover:text-blue-600 transition-colors">Requisitos</a>
+        <!-- Link externo para clientes: aponta para a landing page de engenharia -->
+        <a href="https://expertspro.com.br/engenharia" class="text-gray-600 hover:text-blue-600 transition-colors">Para&nbsp;Clientes</a>
+      </nav>
+      <!-- Botão principal com link para WhatsApp -->
+      <a href="https://wa.me/5511966705217" target="_blank" class="hidden md:block">
+        <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded text-base">Falar com Recrutador</button>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative bg-gradient-to-br from-green-50 to-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <div class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13l2-2m0 0l7-7 7 7m-9 2v8m0-8H5m6 0h6"/></svg>
+          Rede Exclusiva de Engenheiros
+        </div>
+        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          Transforme Sua <span class="text-green-600">Expertise</span> em <span class="text-blue-600">Renda Recorrente</span>
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Faça parte da primeira rede de engenheiros assistidos por IA do Brasil.
+          <strong class="text-green-600">Clientes pré‑validados</strong>,
+          <strong class="text-blue-600">leilão técnico com pagamento justo</strong> e
+          ferramentas que multiplicam sua produtividade.
+        </p>
+        <!-- Destaques rápidos -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div class="text-center bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
+            <div class="text-2xl font-bold text-green-600 mb-1">✔︎</div>
+            <div class="text-sm text-gray-600">Clientes pré‑validados</div>
+          </div>
+          <div class="text-center bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
+            <div class="text-2xl font-bold text-blue-600 mb-1">⚖️</div>
+            <div class="text-sm text-gray-600">Leilão técnico com pagamento justo</div>
+          </div>
+          <div class="text-center bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
+            <div class="text-2xl font-bold text-purple-600 mb-1">🤖</div>
+            <div class="text-sm text-gray-600">Ferramentas de IA exclusivas</div>
+          </div>
+        </div>
+        <!-- Botões -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/5511966705217" target="_blank">
+            <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg flex items-center group">
+              Candidatar‑se Agora
+            </button>
+          </a>
+          <a href="#depoimentos">
+            <button class="border border-green-600 text-green-600 hover:bg-green-50 px-8 py-4 rounded-lg text-lg flex items-center">
+              Ver Depoimentos
+            </button>
+          </a>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+          <div class="text-sm text-blue-800 font-medium mb-1">🚀 Oportunidade Limitada</div>
+          <div class="text-blue-700">Estamos selecionando engenheiros para a rede exclusiva</div>
+        </div>
+      </div>
+      <!-- Formulário de Candidatura -->
+      <div class="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
+        <div class="text-center mb-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Candidate‑se à Rede</h3>
+          <p class="text-gray-600">Preencha seus dados e nosso recrutador entrará em contato</p>
+        </div>
+        <form action="https://formsubmit.co/IA@expertspro.com.br" method="POST" class="flex flex-col space-y-4">
+          <input type="hidden" name="_captcha" value="false" />
+          <!-- Agrupamos os campos em um contêiner rolável para manter o botão visível sem scroll total -->
+          <div class="max-h-64 overflow-y-auto pr-2 space-y-4">
+            <div>
+              <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-green-500 focus:border-green-500" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E‑mail Profissional *</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-green-500 focus:border-green-500" />
+            </div>
+            <div>
+              <label for="telefone" class="block text-sm font-medium text-gray-700 mb-2">WhatsApp *</label>
+              <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-green-500 focus:border-green-500" />
+            </div>
+            <div>
+              <label for="especialidade" class="block text-sm font-medium text-gray-700 mb-2">Especialidade *</label>
+              <select id="especialidade" name="especialidade" required class="mt-1 block w-full border border-gray-300 rounded px-3 py-2">
+                <option value="">Selecione sua especialidade</option>
+                <option value="civil">Engenharia Civil</option>
+                <option value="eletrica">Engenharia Elétrica</option>
+                <option value="mecanica">Engenharia Mecânica</option>
+                <option value="estrutural">Engenharia Estrutural</option>
+                <option value="hidraulica">Engenharia Hidráulica</option>
+                <option value="outros">Outras</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Quais projetos você executa?</label>
+              <div class="space-y-2">
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto Estrutural" class="mr-2" />Projeto Estrutural</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto Elétrico" class="mr-2" />Projeto Elétrico</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto Hidrossanitário" class="mr-2" />Projeto Hidrossanitário</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Drenagem" class="mr-2" />Projeto de Drenagem</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Rede Externa" class="mr-2" />Projeto de Rede Externa</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Gás" class="mr-2" />Projeto de Gás</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Prevenção e Combate a Incêndio" class="mr-2" />Projeto de Prevenção e Combate a Incêndio</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Infraestrutura" class="mr-2" />Projeto de Infraestrutura</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Terraplenagem" class="mr-2" />Projeto de Terraplenagem</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Fundações" class="mr-2" />Projeto de Fundações</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Climatização (HVAC)" class="mr-2" />Projeto de Climatização (HVAC)</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Automação Predial" class="mr-2" />Projeto de Automação Predial</label>
+                <label class="flex items-center"><input type="checkbox" name="projetos[]" value="Projeto de Pavimentação" class="mr-2" />Projeto de Pavimentação</label>
+              </div>
+            </div>
+            <div>
+              <label for="experiencia" class="block text-sm font-medium text-gray-700 mb-2">Experiência</label>
+              <select id="experiencia" name="experiencia" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2">
+                <option value="">Selecione o tempo de experiência</option>
+                <option value="0-2">Nenhuma ou até 2 anos</option>
+                <option value="2-5">2 a 5 anos</option>
+                <option value="5-10">5 a 10 anos</option>
+                <option value="10+">Mais de 10 anos</option>
+              </select>
+            </div>
+            <div>
+              <label for="cidade" class="block text-sm font-medium text-gray-700 mb-2">Cidade/Estado</label>
+              <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo/SP" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+            </div>
+            <div>
+              <label for="disponibilidade" class="block text-sm font-medium text-gray-700 mb-2">Disponibilidade Semanal</label>
+              <select id="disponibilidade" name="disponibilidade" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2">
+                <option value="">Horas disponíveis por semana</option>
+                <option value="10-20">10 a 20 horas</option>
+                <option value="20-30">20 a 30 horas</option>
+                <option value="30+">Mais de 30 horas</option>
+              </select>
+            </div>
+          </div>
+          <!-- Botão e mensagem fora do contêiner rolável para ficarem visíveis sem rolar toda a lista -->
+          <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded font-semibold text-lg">
+            Enviar Candidatura
+          </button>
+          <p class="text-xs text-gray-500 text-center mt-2">
+            🔒 Seus dados estão seguros. Processo seletivo gratuito.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Oportunidade de Mercado -->
+  <section id="oportunidade" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">A Maior <span class="text-green-600">Oportunidade</span> da Engenharia Brasileira</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          O mercado de projetos técnicos está em expansão. A demanda cresce a cada ano, mas faltam engenheiros qualificados. Esta é sua chance de se posicionar na vanguarda.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <!-- Icon BarChart -->
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 20V4m7 9v7m-7-7v4m-5-4v6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Mercado em Crescimento</h3>
+          <p class="text-gray-600">O setor de projetos técnicos movimenta bilhões ao ano e está em plena expansão. Faça parte deste crescimento.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <!-- Icon Users -->
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M17 10h5V8a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M9 10H4V8a4 4 0 013-3.87"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Demanda Não Atendida</h3>
+          <p class="text-gray-600">Muitos projetos solicitados não encontram engenheiros disponíveis. Aproveite essa lacuna e torne‑se referência.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+          <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <!-- Icon DollarSign -->
+            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3-1.343-3-3S10.343 2 12 2s3 1.343 3 3-1.343 3-3 3zM6 14h12a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4a2 2 0 012-2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Renda Justa</h3>
+          <p class="text-gray-600">Trabalhe em projetos técnicos que valorizam seu conhecimento e entregam remuneração justa.</p>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 text-white text-center">
+        <h3 class="text-2xl font-bold mb-4">Por que Agora é o Momento Ideal?</h3>
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+          <div>
+            <div class="text-3xl font-bold mb-2">🚀</div>
+            <div class="font-semibold mb-2">Mercado Aquecido</div>
+            <div class="text-green-100">Construção civil em alta, novos empreendimentos surgindo diariamente.</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold mb-2">🤖</div>
+            <div class="font-semibold mb-2">Tecnologia Avançada</div>
+            <div class="text-green-100">IA potencializa sua produtividade e elimina trabalhos repetitivos.</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold mb-2">💎</div>
+            <div class="font-semibold mb-2">Posicionamento Premium</div>
+            <div class="text-green-100">Seja um dos pioneiros na rede mais exclusiva de engenheiros do país.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section id="como-funciona" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">Como Funciona: <span class="text-blue-600">Seu Novo Modelo de Trabalho</span></h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Um processo simples e transparente que maximiza sua produtividade e renda.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white font-bold text-2xl">1</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Processo Seletivo</h3>
+          <p class="text-gray-600">Análise do seu perfil e teste técnico. Mantemos padrões elevados para garantir a qualidade da rede.</p>
+          <div class="mt-4 text-sm text-blue-600 font-semibold">📋 Avaliação completa</div>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white font-bold text-2xl">2</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Receba Projetos</h3>
+          <p class="text-gray-600">Nossa IA seleciona projetos compatíveis com sua especialidade e disponibilidade. Você escolhe quais aceitar.</p>
+          <div class="mt-4 text-sm text-blue-600 font-semibold">🎯 Match inteligente</div>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white font-bold text-2xl">3</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Execute com IA</h3>
+          <p class="text-gray-600">Use nossas ferramentas de IA para acelerar cálculos, validações e documentação. Produtividade multiplicada.</p>
+          <div class="mt-4 text-sm text-blue-600 font-semibold">⚡ Mais produtividade</div>
+        </div>
+        <div class="text-center">
+          <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <!-- Dollar icon replaced by payment fairness concept -->
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3-1.343-3-3S10.343 2 12 2s3 1.343 3 3-1.343 3-3 3zM6 14h12a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4a2 2 0 012-2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Receba Pagamento</h3>
+          <p class="text-gray-600">A remuneração é depositada rapidamente após a aprovação do projeto, sem burocracia.</p>
+          <div class="mt-4 text-sm text-green-600 font-semibold">💰 Remuneração justa</div>
+        </div>
+      </div>
+      <!-- Ferramentas IA Exclusivas -->
+      <div class="bg-gray-50 rounded-2xl p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Ferramentas IA Exclusivas</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg border border-gray-100">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <!-- Cog icon -->
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.983 14.02a2.033 2.033 0 110-4.066 2.033 2.033 0 010 4.066z"/><path stroke-linecap="round" stroke-linejoin="round" d="M20.013 7.349l1.18-2.042-1.548-2.678-2.042 1.18-.865-1.5h-2.936l-.865 1.5-2.042-1.18-1.548 2.678 1.18 2.042-1.5.865v2.936l1.5.865-1.18 2.042 1.548 2.678 2.042-1.18.865 1.5h2.936l.865-1.5 2.042 1.18 1.548-2.678-1.18-2.042 1.5-.865v-2.936l-1.5-.865z"/></svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Templates Validados</h4>
+            <p class="text-gray-600 text-sm">Modelos prontos e validados que agilizam a elaboração de documentos técnicos.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-100">
+            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+              <!-- FileText icon -->
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 2v6h6"/><path stroke-linecap="round" stroke-linejoin="round" d="M16 13H8m8 4H8m4-8H8"/></svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Metodologia Pronta</h4>
+            <p class="text-gray-600 text-sm">Metodologias testadas e aprovadas que orientam o passo a passo de cada projeto.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-100">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <!-- ShieldCheck icon -->
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Validação de Projeto por IA</h4>
+            <p class="text-gray-600 text-sm">Validação automática de projetos conforme normas técnicas, com IA garantindo conformidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">Benefícios Exclusivos da <span class="text-green-600">Rede Engenhar.IA</span></h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Mais que uma plataforma de projetos, oferecemos um ecossistema completo para o crescimento da sua carreira e renda.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <!-- Dollar icon -->
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3-1.343-3-3S10.343 2 12 2s3 1.343 3 3-1.343 3-3 3zM6 14h12a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4a2 2 0 012-2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Renda Previsível</h3>
+          <p class="text-gray-600 mb-4">Fluxo constante de projetos qualificados e remunerados de forma justa. Seus ganhos acompanham seu esforço.</p>
+          <div class="text-green-600 font-semibold">Planejamento financeiro</div>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+            <!-- Clock icon -->
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Flexibilidade Total</h3>
+          <p class="text-gray-600 mb-4">Trabalhe de onde quiser, quando quiser. Configure sua disponibilidade e a IA respeitará seus limites.</p>
+          <div class="text-blue-600 font-semibold">100% remoto</div>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+            <!-- ShieldCheck icon -->
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Leilão Justo</h3>
+          <p class="text-gray-600 mb-4">Propostas negociadas através de leilões técnicos transparentes que garantem remuneração justa para cada projeto.</p>
+          <div class="text-purple-600 font-semibold">Sem precificação arbitrária</div>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+            <!-- Cog icon -->
+            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.983 14.02a2.033 2.033 0 110-4.066 2.033 2.033 0 010 4.066z"/><path stroke-linecap="round" stroke-linejoin="round" d="M20.013 7.349l1.18-2.042-1.548-2.678-2.042 1.18-.865-1.5h-2.936l-.865 1.5-2.042-1.18-1.548 2.678 1.18 2.042-1.5.865v2.936l1.5.865-1.18 2.042 1.548 2.678 2.042-1.18.865 1.5h2.936l.865-1.5 2.042 1.18 1.548-2.678-1.18-2.042 1.5-.865v-2.936l-1.5-.865z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Ferramentas IA</h3>
+          <p class="text-gray-600 mb-4">Acesso exclusivo a ferramentas que automatizam cálculos e validações, aumentando sua produtividade.</p>
+          <div class="text-yellow-600 font-semibold">Produtividade elevada</div>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+            <!-- GraduationCap icon -->
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.017 12.017 0 0112 21.5 12.017 12.017 0 015.84 10.578L12 14z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Desenvolvimento Contínuo</h3>
+          <p class="text-gray-600 mb-4">Treinamentos, atualizações normativas e networking com os melhores engenheiros do país.</p>
+          <div class="text-indigo-600 font-semibold">Aprendizado constante</div>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+            <!-- Users icon -->
+            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M17 10h5V8a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M9 10H4V8a4 4 0 013-3.87"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Suporte Técnico 24/7</h3>
+          <p class="text-gray-600 mb-4">Equipe de engenheiros seniores pronta para apoio técnico e backup em projetos.</p>
+          <div class="text-red-600 font-semibold">Suporte especializado</div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 text-white text-center">
+        <h3 class="text-2xl font-bold mb-4">Comparação: Mercado Tradicional vs Engenhar.IA</h3>
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+          <div>
+            <h4 class="font-bold text-red-200 mb-4">❌ Mercado Tradicional</h4>
+            <ul class="space-y-2 text-left text-red-100 list-disc list-inside">
+              <li>Busca constante por clientes</li>
+              <li>Projetos mal remunerados</li>
+              <li>Inadimplência elevada</li>
+              <li>Trabalho manual repetitivo</li>
+              <li>Sem suporte técnico</li>
+              <li>Renda instável e imprevisível</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-green-200 mb-4">✅ Engenhar.IA</h4>
+            <ul class="space-y-2 text-left text-green-100 list-disc list-inside">
+              <li>Projetos chegam automaticamente</li>
+              <li>Remuneração justa</li>
+              <li>Pagamentos sem atrasos</li>
+              <li>IA automatiza tarefas repetitivas</li>
+              <li>Suporte técnico especializado 24/7</li>
+              <li>Previsibilidade e crescimento</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">Resultados Reais dos Nossos <span class="text-green-600">Parceiros</span></h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Engenheiros que já fazem parte da rede relatam transformações reais em suas carreiras.</p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl shadow-xl p-8 md:p-12 max-w-5xl mx-auto">
+        <!-- Testemunho único -->
+        <blockquote class="text-2xl text-gray-900 font-medium leading-relaxed mb-6 text-center">
+          “Assim que me cadastrei na plataforma, já comecei a receber orçamentos diretos — orçamentos válidos com clientes reais, que já me renderam contratos fechados. Tudo isso sem eu me preocupar com nada.”
+        </blockquote>
+        <div class="text-center">
+          <div class="font-bold text-gray-900 text-lg">Ricardo Maurício</div>
+          <div class="text-gray-600">Engenheiro Civil</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisitos -->
+  <section id="requisitos" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">Requisitos para <span class="text-blue-600">Fazer Parte</span></h2>
+        <p class="text-xl text-gray-600">Mantemos critérios claros para assegurar a qualidade e o profissionalismo da nossa rede.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+            <!-- CheckCircle icon -->
+            <svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+            Requisitos Obrigatórios
+          </h3>
+          <ul class="space-y-4 list-disc list-inside text-gray-700">
+            <li>CREA ativo e regularizado</li>
+            <li>Formação em engenharia reconhecida pelo MEC</li>
+            <li>Aprovação no teste técnico</li>
+            <li>Você pode começar sem experiência anterior</li>
+            <li>Disponha da quantidade de horas que puder por semana</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+            <!-- Star icon -->
+            <svg class="w-6 h-6 text-yellow-500 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            Diferenciais Valorizados
+          </h3>
+          <ul class="space-y-4 list-disc list-inside text-gray-700">
+            <li>Especialização ou pós‑graduação</li>
+            <li>Experiência com softwares CAD/BIM</li>
+            <li>Conhecimento em normas técnicas atualizadas</li>
+            <li>Portfolio de projetos executados</li>
+            <li>Disponibilidade para trabalho remoto</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-8">
+        <h3 class="text-xl font-bold text-blue-900 mb-4">Processo Seletivo</h3>
+        <div class="grid md:grid-cols-4 gap-4 text-blue-700">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 text-white font-bold">1</div>
+            <div class="font-semibold text-blue-900 mb-1">Candidatura</div>
+            <div class="text-sm">Preenchimento do formulário online</div>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 text-white font-bold">2</div>
+            <div class="font-semibold text-blue-900 mb-1">Análise</div>
+            <div class="text-sm">Validação de documentos e experiência</div>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 text-white font-bold">3</div>
+            <div class="font-semibold text-blue-900 mb-1">Teste</div>
+            <div class="text-sm">Avaliação técnica online</div>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div class="font-semibold text-blue-900 mb-1">Aprovação</div>
+            <div class="text-sm">Integração à rede</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">Perguntas <span class="text-blue-600">Frequentes</span></h2>
+        <p class="text-xl text-gray-600">Tire todas as suas dúvidas sobre como fazer parte da nossa rede</p>
+      </div>
+      <!-- Lista simples de perguntas e respostas -->
+      <div class="space-y-8 text-gray-700">
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-2">Quais são os requisitos para fazer parte da rede?</h4>
+          <p>Você precisa ter CREA ativo, formação em engenharia, enviar sua candidatura e ser aprovado no nosso teste técnico. Não exigimos experiência mínima.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-2">Como funciona o pagamento?</h4>
+          <p>O pagamento é liberado rapidamente após a aprovação do projeto. Todos os valores são negociados de forma justa em leilões técnicos.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-2">Quantos projetos posso receber por mês?</h4>
+          <p>Depende da sua disponibilidade e especialidade. Você define sua capacidade e a IA respeita seus limites.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-2">Preciso de escritório ou posso trabalhar de casa?</h4>
+          <p>Você pode trabalhar 100% remoto. Nossa plataforma é totalmente digital e oferece todas as ferramentas necessárias.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-2">Como a IA ajuda na produtividade?</h4>
+          <p>A inteligência artificial automatiza cálculos repetitivos, gera templates, valida projetos e sugere otimizações, reduzindo seu tempo de trabalho.</p>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <p class="text-gray-600 mb-4">Ainda tem dúvidas sobre o processo?</p>
+        <a href="https://wa.me/5511966705217" target="_blank">
+          <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded text-base">Falar com Recrutador Técnico</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-20 bg-gradient-to-br from-green-600 to-blue-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold text-white mb-6">Pronto para Transformar Sua Carreira?</h2>
+      <p class="text-xl text-green-100 mb-8 leading-relaxed">Junte-se aos engenheiros que já fazem parte da nossa rede exclusiva. Remuneração justa, projetos qualificados e liberdade para trabalhar de onde quiser.</p>
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8">
+        <div class="grid md:grid-cols-3 gap-6 text-white">
+          <div>
+            <div class="text-2xl font-bold mb-1">⚡ Processo Ágil</div>
+            <div class="text-green-100">Candidatura em poucos minutos</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold mb-1">🎯 Seleção Justa</div>
+            <div class="text-green-100">Critérios transparentes</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold mb-1">💰 Renda Imediata</div>
+            <div class="text-green-100">Propostas logo após aprovação</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <a href="https://wa.me/5511966705217" target="_blank">
+          <button class="bg-white text-green-600 hover:bg-gray-100 font-bold text-lg px-8 py-4 rounded-lg">Candidatar‑se Agora</button>
+        </a>
+        <a href="https://wa.me/5511966705217" target="_blank">
+          <button class="border-2 border-white text-white hover:bg-white hover:text-green-600 font-semibold text-lg px-8 py-4 rounded-lg">Falar com Recrutador</button>
+        </a>
+      </div>
+      <div class="flex items-center justify-center space-x-6 text-green-100">
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+          <span>Processo gratuito</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+          <span>Sem compromisso</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+          <span>Retorno rápido</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="flex flex-col max-h-[400px] overflow-y-auto pr-2 space-y-4">
+          <div class="flex items-center space-x-3">
+            <img src="assets/logo.png" alt="Engenhar.IA" class="w-10 h-10 rounded-lg" />
+            <span class="text-2xl font-bold">Engenhar.IA</span>
+          </div>
+          <p class="text-gray-400">A primeira plataforma de engenharia com IA do Brasil. Conectando engenheiros qualificados a projetos de qualidade.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Para Engenheiros</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#como-funciona" class="hover:text-white transition-colors">Como Funciona</a></li>
+            <li><a href="#requisitos" class="hover:text-white transition-colors">Requisitos</a></li>
+            <li><a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos</a></li>
+            <li><a href="https://wa.me/5511966705217" target="_blank" class="hover:text-white transition-colors">Falar com Recrutador</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Suporte</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#faq" class="hover:text-white transition-colors">Central de Ajuda</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="https://wa.me/5511966705217" target="_blank" class="hover:text-white transition-colors">Contato</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contato</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="mailto:contato@expertspro.com.br" class="hover:text-white">contato@expertspro.com.br</a></li>
+            <li><a href="https://wa.me/5511966705219" target="_blank" class="hover:text-white">11 96670‑5219</a></li>
+            <li>São Paulo - SP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Engenhar.IA. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
