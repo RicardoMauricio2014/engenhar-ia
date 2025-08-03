@@ -1,65 +1,37 @@
-# Engenhar.IA — Startup de IA Vertical para Engenharia
+# engenhar-ia
 
-Bem-vindo ao repositório oficial da Engenhar.IA — uma startup focada no desenvolvimento de soluções de Inteligência Artificial para automação e otimização de processos na área de engenharia.
-
----
-
-## 📌 Sobre o Projeto
-
-Engenhar.IA é uma plataforma que visa automatizar o ciclo completo de orçamentação, gestão e execução de projetos de engenharia e arquitetura, utilizando tecnologias de IA de ponta, como Large Language Models (GPT-4), agentes autônomos (Manus), e automação via no-code.
-
-Estamos atualmente na fase de desenvolvimento do MVP, com frontend e backend implementados, além de protótipos de agentes inteligentes em construção.
+> Repositório oficial do projeto **Engenhar.IA** – Soluções de Inteligência Artificial aplicadas à automação de tarefas e agentes autônomos.
 
 ---
 
-## 🚀 Estrutura do Repositório
+## 💡 Visão Geral
 
-- `/mvp` — Código e assets do MVP inicial.
-- `/agents` — Protótipos de agentes autônomos para automação de tarefas.
-- `/frontend` — Frontend do site e interfaces de usuário.
-- `/backend` — APIs e integrações com IA.
-- `/docs` — Documentação técnica, planos e especificações.
+**Engenhar.IA** é um laboratório de prototipagem de soluções com LLMs, agentes autônomos e APIs modernas, com foco em aplicações práticas de IA para negócios. Este repositório concentra os projetos MVP em desenvolvimento, com stack baseada em Python, LangChain, FastAPI, OpenAI e interfaces em React/Tailwind.
 
 ---
 
 ## 🧠 Tecnologias Utilizadas
 
-- Python (FastAPI, scripts para agentes)
-- React.js + TailwindCSS (frontend)
-- OpenAI GPT-4 API, LangChain
-- Manus AI Agents
-- No-code tools (Manus, Zapier para automações)
-- Docker (para containerização)
+- **Python 3.11+**
+- **OpenAI API / Claude / Gemini**
+- **LangChain** – para construção de agentes e pipelines de RAG
+- **FastAPI** – backend leve para expor endpoints de IA
+- **React + TailwindCSS** – interfaces web dos protótipos
+- **Pinecone / Chroma** – vetorização e busca semântica
+- **Streamlit / Gradio** – protótipos rápidos de IA
 
 ---
 
-## 🛠 Funcionalidades Atuais
+## 📁 Estrutura do Projeto
 
-- MVP funcional com landing pages e chatbot integrado.
-- Backend para comunicação com APIs de IA.
-- Protótipo inicial de agente autônomo para atendimento e validação de dados.
-- Fluxos de trabalho e pipelines de prompt engineering.
-
----
-
-## 📈 Próximos Passos
-
-- Desenvolvimento da LLM verticalizada para domínio específico de engenharia.
-- Expansão dos agentes autônomos para tarefas complexas.
-- Integração de orçamentação automática via IA.
-- Melhorias na interface e experiência do usuário.
-
----
-
-## 📞 Contato
-
-Ricardo Mauricio  
-Email: seu.email@exemplo.com  
-LinkedIn: https://linkedin.com/in/seuperfil  
-GitHub: https://github.com/seuperfil
-
----
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT — veja o arquivo LICENSE para detalhes.
+```bash
+engenhar-ia/
+│
+├── agents/              # Protótipos de agentes autônomos
+├── llm-apps/            # Aplicações verticais com LLM (ex: construção, jurídico)
+├── frontend/            # Interfaces em React + Tailwind
+├── api/                 # FastAPI backend para integração com os agentes
+├── docs/                # Documentação, prompts e fluxogramas
+├── notebooks/           # Explorações em Jupyter/Colab
+├── tests/               # Scripts de teste e validação
+└── README.md            # Esta documentação
