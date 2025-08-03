@@ -1,2 +1,66 @@
-# engenhar-ia
-MVP e projetos de IA para automação e agentes autônomos — startup Engenhar.IA
+# Engenhar.IA — Startup de IA Vertical para Engenharia
+
+Bem-vindo ao repositório oficial da Engenhar.IA — uma startup focada no desenvolvimento de soluções de Inteligência Artificial para automação e otimização de processos na área de engenharia.
+
+---
+
+## 📌 Sobre o Projeto
+
+Engenhar.IA é uma plataforma que visa automatizar o ciclo completo de orçamentação, gestão e execução de projetos de engenharia e arquitetura, utilizando tecnologias de IA de ponta, como Large Language Models (GPT-4), agentes autônomos (Manus), e automação via no-code.
+
+Estamos atualmente na fase de desenvolvimento do MVP, com frontend e backend implementados, além de protótipos de agentes inteligentes em construção.
+
+---
+
+## 🚀 Estrutura do Repositório
+
+- `/mvp` — Código e assets do MVP inicial.
+- `/agents` — Protótipos de agentes autônomos para automação de tarefas.
+- `/frontend` — Frontend do site e interfaces de usuário.
+- `/backend` — APIs e integrações com IA.
+- `/docs` — Documentação técnica, planos e especificações.
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- Python (FastAPI, scripts para agentes)
+- React.js + TailwindCSS (frontend)
+- OpenAI GPT-4 API, LangChain
+- Manus AI Agents
+- No-code tools (Manus, Zapier para automações)
+- Docker (para containerização)
+
+---
+
+## 🛠 Funcionalidades Atuais
+
+- MVP funcional com landing pages e chatbot integrado.
+- Backend para comunicação com APIs de IA.
+- Protótipo inicial de agente autônomo para atendimento e validação de dados.
+- Fluxos de trabalho e pipelines de prompt engineering.
+
+---
+
+## 📈 Próximos Passos
+
+- Desenvolvimento da LLM verticalizada para domínio específico de engenharia.
+- Expansão dos agentes autônomos para tarefas complexas.
+- Integração de orçamentação automática via IA.
+- Melhorias na interface e experiência do usuário.
+
+---
+
+## 📞 Contato
+
+Ricardo Mauricio  
+Email: [ricardo@expertspro.com.br]  
+LinkedIn: [https://linkedin.com/in/ricardomauricio2014]  
+GitHub: (https://github.com/RicardoMauricio2014)
+
+---
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT — veja o arquivo LICENSE para detalhes.
+
