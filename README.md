@@ -1,66 +1,42 @@
-# Engenhar.IA — Startup de IA Vertical para Engenharia
+# Engenhar.IA Projects
 
-Bem-vindo ao repositório oficial da Engenhar.IA — uma startup focada no desenvolvimento de soluções de Inteligência Artificial para automação e otimização de processos na área de engenharia.
+Este repositório contém os códigos-fonte dos projetos desenvolvidos para a Startup Engenhar.IA.
 
----
+## Conteúdo do Repositório:
 
-## 📌 Sobre o Projeto
+### 1. `engenharIA-cliente-react`
 
-Engenhar.IA é uma plataforma que visa automatizar o ciclo completo de orçamentação, gestão e execução de projetos de engenharia e arquitetura, utilizando tecnologias de IA de ponta, como Large Language Models (GPT-4), agentes autônomos (Manus), e automação via no-code.
+- **Descrição:** Código-fonte da landing page do cliente, desenvolvida em React.
+- **Tecnologias:** React, Vite, Tailwind CSS.
+- **Funcionalidades:** Formulário de orçamento com 15 campos, integração com FormSubmit, navegação suave, design responsivo.
 
-Estamos atualmente na fase de desenvolvimento do MVP, com frontend e backend implementados, além de protótipos de agentes inteligentes em construção.
+### 2. `engenharIA-engenheiro-react`
 
----
+- **Descrição:** Código-fonte da landing page para profissionais engenheiros, desenvolvida em React.
+- **Tecnologias:** React, Vite, Tailwind CSS.
+- **Funcionalidades:** Página de apresentação para engenheiros interessados em fazer parte da plataforma.
 
-## 🚀 Estrutura do Repositório
+### 3. `engenharIA-cliente-html-estatico`
 
-- `/mvp` — Código e assets do MVP inicial.
-- `/agents` — Protótipos de agentes autônomos para automação de tarefas.
-- `/frontend` — Frontend do site e interfaces de usuário.
-- `/backend` — APIs e integrações com IA.
-- `/docs` — Documentação técnica, planos e especificações.
+- **Descrição:** Versão da landing page do cliente convertida para HTML, CSS e JavaScript puros.
+- **Tecnologias:** HTML, Tailwind CSS (via CDN), JavaScript puro.
+- **Funcionalidades:** Mantém o mesmo formato e funcionalidade do formulário da versão React, otimizada para hospedagens compartilhadas como HostGator.
 
----
+## Como Usar:
 
-## 🧠 Tecnologias Utilizadas
+### Projetos React (`engenharIA-cliente-react`, `engenharIA-engenheiro-react`)
 
-- Python (FastAPI, scripts para agentes)
-- React.js + TailwindCSS (frontend)
-- OpenAI GPT-4 API, LangChain
-- Manus AI Agents
-- No-code tools (Manus, Zapier para automações)
-- Docker (para containerização)
+1.  **Instalar Dependências:** Navegue até o diretório do projeto e execute `npm install`.
+2.  **Modo de Desenvolvimento:** Execute `npm run dev` para iniciar o servidor de desenvolvimento.
+3.  **Build para Produção:** Execute `npm run build` para gerar os arquivos estáticos na pasta `dist/`.
 
----
+### Projeto HTML Estático (`engenharIA-cliente-html-estatico`)
 
-## 🛠 Funcionalidades Atuais
-
-- MVP funcional com landing pages e chatbot integrado.
-- Backend para comunicação com APIs de IA.
-- Protótipo inicial de agente autônomo para atendimento e validação de dados.
-- Fluxos de trabalho e pipelines de prompt engineering.
+1.  **Deploy:** Faça o upload de todo o conteúdo desta pasta para o seu servidor web.
+2.  **Configuração `.htaccess` (se necessário):** Um arquivo `.htaccess` está incluído para roteamento em subdiretórios (ex: `/orcamentoia/`).
 
 ---
 
-## 📈 Próximos Passos
+**Desenvolvido por:** Manus Agent para Engenhar.IA
 
-- Desenvolvimento da LLM verticalizada para domínio específico de engenharia.
-- Expansão dos agentes autônomos para tarefas complexas.
-- Integração de orçamentação automática via IA.
-- Melhorias na interface e experiência do usuário.
-
----
-
-## 📞 Contato
-
-Ricardo Mauricio  
-Email: [ricardo@expertspro.com.br]  
-LinkedIn: [https://linkedin.com/in/ricardomauricio2014]  
-GitHub: (https://github.com/RicardoMauricio2014)
-
----
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT — veja o arquivo LICENSE para detalhes.
 
