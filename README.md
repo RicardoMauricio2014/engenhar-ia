@@ -1,42 +1,80 @@
-# Engenhar.IA Projects
+ Engenhar.IA – Smart Cost Estimation with Specialized AI for Engineering and Architecture
+🎥 Video Demo
+📽️ Watch a quick project demo click here
+Also available on:
+🔗 https://expertspro.com.br/engenheiro/
+🔗 https://expertspro.com.br/engenharia/
 
-Este repositório contém os códigos-fonte dos projetos desenvolvidos para a Startup Engenhar.IA.
+🧠 Overview
+Engenhar.IA is a vertical AI specialist designed to automate the technical cost estimation process for engineering and architectural projects.
 
-## Conteúdo do Repositório:
+It interprets client briefings, generates complete technical scopes, automatically prices using tables and parameters, and connects with professionals for execution, validation, or technical bidding.
 
-### 1. `engenharIA-cliente-react`
+🛠️ Tech Stack & Tools
+Python 3.11
 
-- **Descrição:** Código-fonte da landing page do cliente, desenvolvida em React.
-- **Tecnologias:** React, Vite, Tailwind CSS.
-- **Funcionalidades:** Formulário de orçamento com 15 campos, integração com FormSubmit, navegação suave, design responsivo.
+LangChain
 
-### 2. `engenharIA-engenheiro-react`
+CrewAI
 
-- **Descrição:** Código-fonte da landing page para profissionais engenheiros, desenvolvida em React.
-- **Tecnologias:** React, Vite, Tailwind CSS.
-- **Funcionalidades:** Página de apresentação para engenheiros interessados em fazer parte da plataforma.
+OpenAI GPT-4 / GPT-3.5-turbo
 
-### 3. `engenharIA-cliente-html-estatico`
+FastAPI
 
-- **Descrição:** Versão da landing page do cliente convertida para HTML, CSS e JavaScript puros.
-- **Tecnologias:** HTML, Tailwind CSS (via CDN), JavaScript puro.
-- **Funcionalidades:** Mantém o mesmo formato e funcionalidade do formulário da versão React, otimizada para hospedagens compartilhadas como HostGator.
+React + TailwindCSS (Frontend)
 
-## Como Usar:
+SQLite (for MVP) / PostgreSQL (planned)
 
-### Projetos React (`engenharIA-cliente-react`, `engenharIA-engenheiro-react`)
+Docker (local development)
 
-1.  **Instalar Dependências:** Navegue até o diretório do projeto e execute `npm install`.
-2.  **Modo de Desenvolvimento:** Execute `npm run dev` para iniciar o servidor de desenvolvimento.
-3.  **Build para Produção:** Execute `npm run build` para gerar os arquivos estáticos na pasta `dist/`.
+🧱 MVP Architecture
+AI interprets client briefings (natural language)
 
-### Projeto HTML Estático (`engenharIA-cliente-html-estatico`)
+Validates technical parameters and flags inconsistencies
 
-1.  **Deploy:** Faça o upload de todo o conteúdo desta pasta para o seu servidor web.
-2.  **Configuração `.htaccess` (se necessário):** Um arquivo `.htaccess` está incluído para roteamento em subdiretórios (ex: `/orcamentoia/`).
+Suggests a standard technical scope and automates pricing
 
----
+Can trigger technical bidding processes among professionals
 
-**Desenvolvido por:** Manus Agent para Engenhar.IA
+💡 Features in Development
+ Frontend with guided technical forms
 
+ Functional MVP for AI-powered cost estimation
 
+ Backend with FastAPI and GPT integration
+
+ Autonomous agent for detailed scope generation
+
+ Connection to a database of professionals by specialty
+
+ Proposal dashboard and quotation history
+
+ AI-assisted technical validation mechanism
+
+📂 Repository Structure
+(You can add a detailed folder tree here if needed.)
+
+👤 Author
+Ricardo Mauricio
+Technical creator and founder of Engenhar.IA
+Specialist in applied AI, LLMs, and automation of technical processes.
+
+🔗 LinkedIn
+🔗 GitHub
+📧 contato@engenhar.ia.br
+
+🤝 Want to Collaborate?
+Suggestions, issues, and pull requests are welcome!
+Feel free to test, fork, or adapt this project to your domain.
+
+# Backend
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+# Frontend
+cd frontend
+npm install
+npm run dev
